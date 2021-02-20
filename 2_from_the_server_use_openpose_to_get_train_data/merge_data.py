@@ -9,8 +9,9 @@ import glob
 now_time = time.asctime(time.localtime(time.time()))
 now_time = now_time.replace(" ", "_")
 now_time = now_time.replace(":", "-")
-fold_address = "/home/sctmaintainer/Desktop/open_pose/nursecalldocker/openpose-docker/docker-inside/train_data/pose_recognition_data.txt"
-path = "/home/xuchen/Desktop/docker-inside/2_from_the_server_use_openpose_to_get_train_data"  # 文件夹目录
+path = "/home/xuchen/Desktop/save_fold_smart_care_tech/NN_make_wave_model_failed/2_from_the_server_use_openpose_to_get_train_data/data5"
+fold_address = path+"/pose_recognition_data.txt"
+# path = "/home/xuchen/Desktop/docker-inside/2_from_the_server_use_openpose_to_get_train_data"  # 文件夹目录
 files = os.listdir(path)  # 得到文件夹下的所有文件名称
 xy = np.zeros((1, 2))
 i = 0

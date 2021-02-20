@@ -94,6 +94,7 @@ for epoch in range(num_epochs):
     for i, (images, labels) in enumerate(train_loader):
         # origin shape: [100, 1, 28, 28]
         # resized: [100, 784]
+        print(f"time:::::::::::::::::::::::{i}")
         images = torch.unsqueeze(images, 1).to(device)
         # images = images.reshape(-1, 28*28)
         labels = torch.unsqueeze(labels, 1)
